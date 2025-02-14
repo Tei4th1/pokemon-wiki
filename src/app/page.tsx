@@ -1,7 +1,7 @@
+'use client';
+
 import Header from '@/components/header';
 
-function Home() {
+export default function Home() {
   return <Header />;
 }
-
-export default Home;
