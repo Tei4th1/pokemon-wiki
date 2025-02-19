@@ -8,15 +8,15 @@ const StyledLink = styled.a`
   font-weight: 400;
   font-size: 25px;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
-
-export default function Navigation({
-  href,
-  children,
-}: {
+interface NavigationProps {
   href: string;
   children: React.ReactNode;
-}) {
+}
+export default function Navigation({ href, children }: NavigationProps) {
   return (
     <Link href={href} passHref>
       <StyledLink>{children}</StyledLink>
