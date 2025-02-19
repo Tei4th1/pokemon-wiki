@@ -1,4 +1,5 @@
 'use client';
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 
 export default function Pokedex() {
@@ -6,6 +7,7 @@ export default function Pokedex() {
     <div>
       <Header />
       <main>1!</main>
+      <Footer />
     </div>
   );
 }
