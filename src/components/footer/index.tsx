@@ -15,6 +15,10 @@ const FooterContainer = styled.footer`
   padding: 1.5rem 3rem;
   background-color: none;
   position: relative;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const GithubLink = styled.a`
   font-family: karla;

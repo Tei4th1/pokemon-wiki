@@ -29,7 +29,7 @@ const Overlay = styled.div<{ isOpen: boolean }>`
 
 const NavigationContainer = styled.div<{ isOpen: boolean }>`
   display: flex;
-  gap: 20px;
+  gap: 60px;
 
   @media (max-width: 768px) {
     flex-direction: column;
