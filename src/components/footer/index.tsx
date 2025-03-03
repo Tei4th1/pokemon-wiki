@@ -8,16 +8,20 @@ const Text = styled.h3`
   font-size: 17px;
 `;
 const FooterContainer = styled.footer`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1.5rem 3rem;
-  background-color: none;
-  position: relative;
+  background-color: transparent;
+  z-index: 10;
   @media (max-width: 768px) {
-    display: flex;
     flex-direction: column;
+    padding: 1rem;
   }
 `;
 const GithubLink = styled.a`

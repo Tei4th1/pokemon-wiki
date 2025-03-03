@@ -12,6 +12,7 @@ const HeaderContainer = styled.header`
   padding: 10px 20px;
   background-color: #f5db13;
   position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
 const Overlay = styled.div<{ isOpen: boolean }>`
@@ -39,7 +40,7 @@ const NavigationContainer = styled.div<{ isOpen: boolean }>`
     left: 0;
     width: 100%;
     height: 50%;
-    background-color: #f5db13;
+    background-color: #f5db13
     padding: 20px;
     border-radius: 0 0 20px 20px;
     z-index: 20;
@@ -87,7 +88,7 @@ export default function Header() {
     <HeaderContainer>
       <Link href="/" passHref>
         <Image
-          src="/PokemonLogo.svg"
+          src="/pokemon-logo.svg"
           alt="Logo"
           width={150}
           height={63}
@@ -107,7 +108,7 @@ export default function Header() {
       <NavigationContainer isOpen={isOpen}>
         <MenuLogo>
           <Image
-            src="/PokemonLogo.svg"
+            src="/pokemon-logo.svg"
             alt="Menu Logo"
             width={150}
             height={63}
@@ -116,13 +117,13 @@ export default function Header() {
         <Navigation href="/" onClick={toggleMenu}>
           Home
         </Navigation>
-        <Navigation href="/Pokedex" onClick={toggleMenu}>
+        <Navigation href="/pokedex" onClick={toggleMenu}>
           Pokédex
         </Navigation>
-        <Navigation href="/Legendaries" onClick={toggleMenu}>
+        <Navigation href="/legendaries" onClick={toggleMenu}>
           Legendaries
         </Navigation>
-        <Navigation href="/Compare" onClick={toggleMenu}>
+        <Navigation href="/compare" onClick={toggleMenu}>
           Compare
         </Navigation>
       </NavigationContainer>
