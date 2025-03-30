@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <Background bgcolor="linear-gradient(to bottom, #f5db13, #f2b807)">
-        <MainPage></MainPage>
+        <MainPage />
       </Background>
       <Footer />
     </>
